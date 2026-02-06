@@ -1,0 +1,166 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', Helvetica, Arial, sans-serif;
+}
+
+/* FONDO */
+body {
+    min-height: 100vh;
+    background: linear-gradient(
+        rgba(0,0,0,0.85),
+        rgba(0,0,0,0.95)
+    ),
+    url("https://images.unsplash.com/photo-1581905764498-f1b60bae941a") center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+/* OVERLAY (por si luego agregas imagen) */
+.background-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.55);
+    z-index: -1;
+}
+
+/* CONTENEDOR PRINCIPAL */
+.dashboard {
+    width: 100%;
+    max-width: 650px;
+    background: rgba(0,0,0,0.8);
+    padding: 45px;
+    border-radius: 10px;
+    box-shadow: 0 0 40px rgba(0,0,0,0.9);
+    animation: fadeIn 0.6s ease;
+}
+
+/* TÍTULO */
+.dashboard h2 {
+    text-align: center;
+    font-size: 32px;
+    color: #e50914;
+    margin-bottom: 10px;
+}
+
+/* MENSAJE */
+.mensaje {
+    text-align: center;
+    font-size: 15px;
+    color: #b3b3b3;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+/* ACCIONES */
+.acciones {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    margin-bottom: 35px;
+}
+
+/* BOTONES */
+.btn {
+    padding: 12px 22px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.25s ease;
+    text-align: center;
+    min-width: 160px;
+}
+
+/* BOTÓN PRINCIPAL */
+.btn.principal {
+    background: #e50914;
+    color: #fff;
+}
+
+.btn.principal:hover {
+    background: #f6121d;
+    transform: translateY(-2px);
+}
+
+/* BOTÓN SECUNDARIO */
+.btn.secundario {
+    background: transparent;
+    border: 1px solid #555;
+    color: #b3b3b3;
+}
+
+.btn.secundario:hover {
+    border-color: #e50914;
+    color: #fff;
+}
+
+/* INFO CUENTA */
+.info {
+    margin-top: 25px;
+    border-top: 1px solid #333;
+    padding-top: 25px;
+}
+
+.info h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+/* LISTA */
+.info ul {
+    list-style: none;
+}
+
+.info li {
+    font-size: 14px;
+    padding: 8px 0;
+    padding-left: 20px;
+    position: relative;
+}
+
+/* ICONOS */
+.info li::before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    color: #4caf50;
+}
+
+.info li.warn::before {
+    content: "⚠";
+    color: #ff9800;
+}
+
+/* ANIMACIÓN */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+    .dashboard {
+        padding: 30px 20px;
+    }
+
+    .dashboard h2 {
+        font-size: 26px;
+    }
+
+    .acciones {
+        flex-direction: column;
+    }
+}

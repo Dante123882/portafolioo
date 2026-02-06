@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="css/contacto.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<nav>
+    <a href="index.html">← Volver al Portafolio</a>
+</nav>
+
+<div class="main-container">
+
+    <!-- PERFIL -->
+    <div class="profile-section">
+
+        <label>Selecciona un contacto</label>
+        <select id="contactoSelect">
+            <option value="dante">Dante Rodriguez</option>
+            <option value="carla">Carla Vazquez</option>
+        </select>
+
+        <h2 id="nombrePerfil">Dante Kaleb Rodriguez Flores</h2>
+        <span class="role" id="rolPerfil">Desarrollador de Software en formación</span>
+
+        <p class="bio" id="bioPerfil">
+            Estudiante de Ingeniería en Desarrollo de Software Multiplataforma en la Universidad Tecnológica de Coahuila. Me considero una persona responsable, apasionada por la tecnología, 
+                la arquitectura de software y el aprendizaje continuo de nuevos lenguajes 
+                como PHP, JavaScript y C#.
+        </p>
+
+    </div>
+
+    <!-- FORMULARIO -->
+    <div class="contact-form">
+        <h3 style="margin-bottom: 1.5rem;">Enviar mensaje</h3>
+
+        <form action="enviar_contacto.php" method="post">
+            <input type="hidden" name="correoDestino" id="correoDestino" value="danterodzflores@gmail.com">
+
+            <label>Nombre</label>
+            <input type="text" name="nombre" required>
+
+            <label>Correo</label>
+            <input type="email" name="email" required>
+
+            <label>Mensaje</label>
+            <textarea name="mensaje" rows="4" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+
+</div>
+
+<footer>
+    UTC 2026
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="contacto.js"></script>
+</body>
+</html>

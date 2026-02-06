@@ -1,0 +1,97 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+/* FONDO */
+body {
+    height: 100vh;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.75),
+        rgba(0, 0, 0, 0.85)
+    ),
+    url("https://images.unsplash.com/photo-1581905764498-f1b60bae941a");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+/* CONTENEDOR FORM */
+form {
+    background: rgba(0, 0, 0, 0.75);
+    padding: 40px;
+    width: 100%;
+    max-width: 380px;
+    border-radius: 8px;
+    box-shadow: 0 0 30px rgba(0,0,0,0.8);
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+/* TÍTULO */
+form::before {
+    content: "Netflix Demo";
+    color: #e50914;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* INPUTS */
+input {
+    background: #333;
+    border: none;
+    outline: none;
+    padding: 14px;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 15px;
+}
+
+input::placeholder {
+    color: #8c8c8c;
+}
+
+input:focus {
+    background: #454545;
+    border: 1px solid #e50914;
+}
+
+/* BOTÓN */
+button {
+    background: #e50914;
+    color: #fff;
+    border: none;
+    padding: 14px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background: #f6121d;
+    transform: scale(1.02);
+}
+
+/* LINK REGISTRO */
+a {
+    color: #b3b3b3;
+    text-decoration: none;
+    font-size: 14px;
+    text-align: center;
+}
+
+a:hover {
+    color: #fff;
+    text-decoration: underline;
+}

@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.9)),
+                url("https://images.unsplash.com/photo-1581905764498-f1b60bae941a");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: white;
+}
+
+.container {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.logo {
+    font-size: 4rem;
+    color: #e50914;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 1.3rem;
+    margin-bottom: 40px;
+}
+
+.buttons {
+    margin-bottom: 50px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 15px 35px;
+    margin: 10px;
+    font-size: 1.1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.btn-red {
+    background-color: #e50914;
+    color: white;
+}
+
+.btn-red:hover {
+    background-color: #f40612;
+}
+
+.btn-dark {
+    background-color: rgba(0,0,0,0.7);
+    color: white;
+    border: 1px solid white;
+}
+
+.btn-dark:hover {
+    background-color: white;
+    color: black;
+}
+
+.about {
+    max-width: 700px;
+    margin: auto;
+    background-color: rgba(0,0,0,0.6);
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.about h2 {
+    margin-bottom: 15px;
+}
+
+.about ul {
+    text-align: left;
+    margin: 20px auto;
+    max-width: 400px;
+}
+
+.about li {
+    margin-bottom: 10px;
+}

@@ -1,0 +1,132 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+/* FONDO */
+body {
+    min-height: 100vh;
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.9)),
+        url("https://images.unsplash.com/photo-1581905764498-f1b60bae941a");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+/* CONTENEDOR */
+form {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 40px 35px;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    animation: fadeIn 0.7s ease;
+}
+
+/* TÍTULO */
+h2 {
+    color: #e50914;
+    margin-bottom: 25px;
+    font-size: 28px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+/* SUBTÍTULOS (PLAN / MÉTODO DE PAGO) */
+h3 {
+    text-align: left;
+    font-size: 14px;
+    margin: 15px 0 6px;
+    color: #ccc;
+    font-weight: normal;
+}
+
+/* INPUTS Y SELECT */
+input,
+select {
+    width: 100%;
+    height: 46px;
+    margin-bottom: 14px;
+    padding: 0 14px;
+    background: #222;
+    border: 1px solid #333;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+input::placeholder {
+    color: #9a9a9a;
+}
+
+input:focus,
+select:focus {
+    outline: none;
+    border-color: #e50914;
+    background: #2c2c2c;
+}
+
+/* BOTÓN */
+button {
+    width: 100%;
+    height: 46px;
+    background: linear-gradient(135deg, #e50914, #f6121d);
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(229,9,20,0.4);
+}
+
+/* LINKS */
+a {
+    display: block;
+    margin-top: 18px;
+    font-size: 14px;
+    color: #b3b3b3;
+    text-decoration: none;
+    text-align: center;
+}
+
+a:hover {
+    color: #fff;
+}
+
+/* ANIMACIÓN */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* RESPONSIVE */
+@media (max-width: 480px) {
+    form {
+        padding: 30px 25px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+}
