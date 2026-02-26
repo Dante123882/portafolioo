@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio Web - Desarrollo de APIs</title>
+    <link rel="stylesheet" href="css/unidad3.css">
+</head>
+<body>
+
+    <div class="portfolio-container">
+        <a href="index.html" class="back-link">← Volver al Inicio</a>
+        <header>
+            <h1>UNIDAD 3: Desarrollo de Interfaces de Programación de Aplicaciones (API) </h1>
+            
+        </header>
+
+        <section id="frameworks">
+            <h2>Frameworks en Aplicaciones Orientadas a Servicios</h2>
+            <p>Un framework en el desarrollo de APIs proporciona una estructura base que estandariza la creación de servicios web, facilitando el enrutamiento, la gestión de peticiones HTTP, la seguridad y la conexión a bases de datos. En arquitecturas orientadas a servicios (SOA) o microservicios, elegir el framework adecuado es crucial para la escalabilidad.</p>
+            
+            <div style="text-align: center; margin: 2.5rem 0;">
+    <svg width="100%" height="200" viewBox="0 0 600 200" xmlns="http://www.w3.org/2000/svg">
+        <rect x="50" y="70" width="100" height="60" rx="8" fill="rgba(102, 126, 234, 0.1)" stroke="#667eea" stroke-width="2"/>
+        <text x="100" y="105" fill="#e4e4e7" font-family="sans-serif" font-weight="bold" font-size="14" text-anchor="middle">Cliente Web/App</text>
+        
+        <path d="M 160 90 L 240 90" stroke="#a1a1aa" stroke-width="2" marker-end="url(#arrow)" stroke-dasharray="5,5" />
+        <path d="M 240 110 L 160 110" stroke="#a1a1aa" stroke-width="2" marker-end="url(#arrow)" stroke-dasharray="5,5" />
+        <text x="200" y="80" fill="#a1a1aa" font-family="sans-serif" font-size="12" text-anchor="middle">JSON / HTTP</text>
+
+        <rect x="250" y="50" width="100" height="100" rx="8" fill="rgba(240, 147, 251, 0.1)" stroke="#f093fb" stroke-width="2"/>
+        <text x="300" y="105" fill="#e4e4e7" font-family="sans-serif" font-weight="bold" font-size="14" text-anchor="middle">API REST</text>
+        
+        <path d="M 360 90 L 440 90" stroke="#a1a1aa" stroke-width="2" marker-end="url(#arrow)" stroke-dasharray="5,5" />
+        <path d="M 440 110 L 360 110" stroke="#a1a1aa" stroke-width="2" marker-end="url(#arrow)" stroke-dasharray="5,5" />
+        <text x="400" y="80" fill="#a1a1aa" font-family="sans-serif" font-size="12" text-anchor="middle">Consultas</text>
+
+        <path d="M 450 70 C 450 60, 550 60, 550 70 L 550 130 C 550 140, 450 140, 450 130 Z" fill="rgba(79, 172, 254, 0.1)" stroke="#4facfe" stroke-width="2"/>
+        <path d="M 450 70 C 450 80, 550 80, 550 70" fill="none" stroke="#4facfe" stroke-width="2"/>
+        <text x="500" y="110" fill="#e4e4e7" font-family="sans-serif" font-weight="bold" font-size="14" text-anchor="middle">Base de Datos</text>
+    </svg>
+</div>
+
+            <div class="framework-grid">
+                <div class="card">
+                    <strong>ASP.NET Core (C#)</strong>
+                    <p>Framework multiplataforma de alto rendimiento, ideal para arquitecturas empresariales sólidas. Ofrece tipado fuerte, inyección de dependencias nativa y excelente integración con bases de datos SQL.</p>
+                </div>
+                <div class="card">
+                    <strong>Express.js (Node.js)</strong>
+                    <p>Minimalista y flexible. Es el estándar en el ecosistema JavaScript para crear APIs RESTful de manera rápida, manejando el asincronismo eficientemente.</p>
+                </div>
+                <div class="card">
+                    <strong>FastAPI (Python)</strong>
+                    <p>Moderno y extremadamente rápido. Genera documentación automática (Swagger/OpenAPI) basándose en los tipos de datos de Python, acelerando el desarrollo.</p>
+                </div>
+                <div class="card">
+                    <strong>Laravel / Lumen (PHP)</strong>
+                    <p>Lumen es el micro-framework de Laravel diseñado específicamente para construir APIs veloces, aprovechando el robusto ORM (Eloquent) del ecosistema PHP.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="proceso">
+            <h2>Proceso de Desarrollo de una API</h2>
+            <p>El ciclo de vida del desarrollo de una API requiere una planificación meticulosa para garantizar que los endpoints sean seguros, eficientes y fáciles de consumir por las aplicaciones cliente.</p>
+
+            <div style="text-align: center; margin: 2.5rem 0;">
+    <svg width="100%" height="120" viewBox="0 0 600 120" xmlns="http://www.w3.org/2000/svg">
+        <g transform="translate(40, 40)">
+            <circle cx="40" cy="20" r="25" fill="rgba(102, 126, 234, 0.2)" stroke="#667eea" stroke-width="2"/>
+            <text x="40" y="25" fill="#e4e4e7" font-family="sans-serif" font-weight="bold" font-size="12" text-anchor="middle">Diseño</text>
+            
+            <path d="M 75 20 L 135 20" stroke="#a1a1aa" stroke-width="2" marker-end="url(#arrow)" />
+            
+            <circle cx="170" cy="20" r="25" fill="rgba(240, 147, 251, 0.2)" stroke="#f093fb" stroke-width="2"/>
+            <text x="170" y="25" fill="#e4e4e7" font-family="sans-serif" font-weight="bold" font-size="12" text-anchor="middle">Desarrollo</text>
+            
+            <path d="M 205 20 L 265 20" stroke="#a1a1aa" stroke-width="2" marker-end="url(#arrow)" />
+            
+            <circle cx="300" cy="20" r="25" fill="rgba(79, 172, 254, 0.2)" stroke="#4facfe" stroke-width="2"/>
+            <text x="300" y="25" fill="#e4e4e7" font-family="sans-serif" font-weight="bold" font-size="12" text-anchor="middle">Pruebas</text>
+
+            <path d="M 335 20 L 395 20" stroke="#a1a1aa" stroke-width="2" marker-end="url(#arrow)" />
+
+            <circle cx="430" cy="20" r="25" fill="rgba(250, 112, 154, 0.2)" stroke="#fa709a" stroke-width="2"/>
+            <text x="430" y="25" fill="#e4e4e7" font-family="sans-serif" font-weight="bold" font-size="12" text-anchor="middle">Deploy</text>
+        </g>
+    </svg>
+</div>
+
+            <ul class="process-list">
+                <li>
+                    <strong>1. Análisis y Diseño (Design-First):</strong>
+                    <p>Se definen los requerimientos del servicio. Se estructuran los endpoints, los métodos HTTP (GET, POST, PUT, DELETE) y los formatos de respuesta (generalmente JSON). Herramientas como Swagger u OpenAPI son fundamentales en esta etapa.</p>
+                </li>
+                <li>
+                    <strong>2. Desarrollo y Lógica de Negocio:</strong>
+                    <p>Codificación de la API utilizando el framework seleccionado. Incluye la configuración del enrutamiento, la implementación de controladores, la conexión a la base de datos y la creación de las operaciones CRUD.</p>
+                </li>
+                <li>
+                    <strong>3. Seguridad y Autenticación:</strong>
+                    <p>Implementación de capas de seguridad para proteger los endpoints. Esto abarca el uso de tokens (como JWT - JSON Web Tokens), OAuth 2.0, configuración de CORS y validación/sanitización de datos de entrada.</p>
+                </li>
+                <li>
+                    <strong>4. Pruebas (Testing):</strong>
+                    <p>Verificación del correcto funcionamiento de la API. Se realizan pruebas unitarias y de integración. Herramientas como Postman o Insomnia se utilizan para simular peticiones y validar los códigos de estado HTTP (200, 400, 404, 500).</p>
+                </li>
+                <li>
+                    <strong>5. Despliegue (Deployment) y Monitorización:</strong>
+                    <p>La API se aloja en un servidor o servicio en la nube (como AWS, Azure o un VPS). Se configuran pipelines de CI/CD y se establecen herramientas de monitoreo para vigilar el rendimiento y los registros de errores (logs).</p>
+                </li>
+                <li>
+                    <strong>6. Documentación y Mantenimiento:</strong>
+                    <p>Creación de guías claras para que otros desarrolladores puedan consumir la API. El mantenimiento implica el versionado de la API (ej. /api/v1/usuarios) para no romper la compatibilidad con clientes existentes al realizar actualizaciones.</p>
+                </li>
+            </ul>
+        </section>
+    </div>
+
+</body>
+</html>
